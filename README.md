@@ -168,3 +168,30 @@ Displayed to Other Students
 
 ## 📡 REST API Endpoints
 
+### Authentication
+
+| Method | Endpoint | Description |
+|----------|----------|-------------|
+| POST | `/api/auth/register` | Register User |
+| POST | `/api/auth/login` | Login User |
+
+### Slot Requests
+
+| Method | Endpoint | Description |
+|----------|----------|-------------|
+| POST | `/api/content` | Create Request |
+| GET | `/api/content` | Fetch All Requests |
+
+---
+
+## 🚀 Future Improvements
+
+- Search by Faculty
+- Search by Slot
+- Automatic Slot Matching
+- Email Notifications
+- User Dashboard
+- Admin Panel
+- Real-time Updates using Socket.io
+- Docker Support
+- Deployment on AWS/Vercel
