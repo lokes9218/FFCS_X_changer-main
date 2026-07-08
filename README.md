@@ -132,3 +132,39 @@ Collections include:
 - Slot Requests
 
 ---
+
+
+## 🔒 Authentication Flow
+
+```
+Register
+
+↓
+
+Login
+
+↓
+
+JWT Token
+
+↓
+
+Authorized User
+
+↓
+
+Create Slot Request
+
+↓
+
+Stored in MongoDB
+
+↓
+
+Displayed to Other Students
+```
+
+---
+
+## 📡 REST API Endpoints
+
