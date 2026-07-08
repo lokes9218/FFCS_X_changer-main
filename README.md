@@ -24,3 +24,111 @@ Done by Lokeswaran S
 | Backend    | Node.js, Express.js           |
 | Database   | MongoDB (Mongoose ORM)        |
 | Hosting    | Netlify (Frontend), Render (Backend) |
+
+
+## 📂 Project Structure
+
+```
+FFCS_Xchanger
+│
+├── backend
+│   ├── models
+│   ├── routes
+│   ├── middleware
+│   ├── server.js
+│   └── package.json
+│
+├── frontend
+│   ├── public
+│   ├── src
+│   └── package.json
+│
+└── README.md
+```
+
+---
+
+## ⚙️ Installation
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/yourusername/FFCS_Xchanger.git
+
+cd FFCS_Xchanger
+```
+
+---
+
+### 2. Install Backend Dependencies
+
+```bash
+cd backend
+
+npm install
+```
+
+---
+
+### 3. Configure Environment Variables
+
+Create a `.env` file inside the **backend** directory.
+
+```env
+MONGO_URI=your_mongodb_connection_string
+
+JWT_SECRET=your_secret_key
+
+PORT=5000
+```
+
+---
+
+### 4. Start Backend
+
+```bash
+npm start
+```
+
+Server runs on
+
+```
+http://localhost:5000
+```
+
+---
+
+### 5. Install Frontend Dependencies
+
+```bash
+cd ../frontend
+
+npm install
+```
+
+---
+
+### 6. Start Frontend
+
+```bash
+npm start
+```
+
+Application runs on
+
+```
+http://localhost:3000
+```
+
+---
+
+## 🗄 Database
+
+MongoDB Atlas is used as the cloud database.
+
+Collections include:
+
+- Users
+- Slot Requests
+
+---
