@@ -1,5 +1,5 @@
 # 🔁 FFCS Xchanger
-Done by Lokeswaran S
+
 ## 📌 Project Overview
 
 **FFCS Xchanger** is a web platform designed for students of **Vellore Institute of Technology (VIT)** to easily **swap class slots** with their peers during the FFCS add/drop period. This tool helps avoid the confusion and spam often encountered during manual coordination via WhatsApp or Telegram.
@@ -195,3 +195,5 @@ Displayed to Other Students
 - Real-time Updates using Socket.io
 - Docker Support
 - Deployment on AWS/Vercel
+
+- Done by Lokeswaran S
