@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './App.css';
 
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+
 function FormPage() {
   const [formData, setFormData] = useState({
     name: '',
@@ -35,7 +37,7 @@ function FormPage() {
     console.log("Submitting form with data:", formData);
 
     try {
-      const res = await fetch('https://ffcs-xchanger-1.onrender.com/api/content', {
+      const res = await fetch(`${API_BASE_URL}/api/content`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -75,7 +77,7 @@ function FormPage() {
   };
 
   useEffect(() => {
-    fetch('https://ffcs-xchanger-1.onrender.com/api/content', {
+    fetch(`${API_BASE_URL}/api/content`, {
       headers: {
         'Authorization': `Bearer ${localStorage.getItem('token')}`,
       },

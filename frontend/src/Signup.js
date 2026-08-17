@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+
 function Signup() {
   const navigate = useNavigate();
 
@@ -29,7 +31,7 @@ const handleSubmit = async (e) => {
   }
 
   try {
-    const res = await fetch('https://ffcs-xchanger-1.onrender.com/api/auth/register', {
+    const res = await fetch(`${API_BASE_URL}/api/auth/register`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({

@@ -20,14 +20,13 @@ app.use('/api/content', contentRoutes);
 // MongoDB Connection
 const mongoURI = process.env.MONGO_URI;
 
-mongoose.connect(mongoURI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-})
-.then(() => console.log('MongoDB Connected'))
-.catch(err => console.error('MongoDB connection error:', err));
-
-
+if (!mongoURI) {
+  console.error('MONGO_URI is missing. Set it in backend/.env before starting the server.');
+} else {
+  mongoose.connect(mongoURI)
+    .then(() => console.log('MongoDB Connected'))
+    .catch(err => console.error('MongoDB connection error:', err));
+}
 
 // Start the server
 const PORT = process.env.PORT || 5000;

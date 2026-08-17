@@ -6,7 +6,7 @@ const User = require('../models/User');   //Mongoose model for the users collect
 const router = express.Router(); //separate router (like a mini app) for authentication-related routes.
 
 // 🔐 Secret key for JWT
-const JWT_SECRET = 'your_jwt_secret_key'; // You can move this to .env
+const JWT_SECRET = process.env.JWT_SECRET; // You can move this to .env
 
 // REGISTER 
 router.post('/register', async (req, res) => {
